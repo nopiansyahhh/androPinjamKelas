@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">pinjamkelas</string>
+
+    <string-array name="Pilih_Gedung">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>B1</item>
+        <item>B2</item>
+    </string-array>
+
+    <string-array name="Pilih_Ruangan">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>Auditorium</item>
+    </string-array>
+</resources>
