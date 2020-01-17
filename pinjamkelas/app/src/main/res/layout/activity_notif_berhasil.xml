@@ -58,42 +58,58 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:background="#3858EF"
         android:baselineAligned="false"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#062EF0"
-            android:orientation="vertical">
+            android:background="#3858EF"
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00B19D"
+                android:padding="5dp"
+                android:text="Pengajuan Pinjaman Berhasil !!!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tnim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="Pilih Ruang Kelas"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginTop="10dp"
+                android:text="Pinjaman sedang diperiksa oleh Admin"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/ruangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Anda bisa mengajukan kembali pinjaman ruangan yang lain"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/TanggalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:text="Atau klik disini untuk melihat riwayat pinjaman"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#062EF0" />
-
     </LinearLayout>
 
     <LinearLayout

@@ -69,7 +69,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/nim"
+            android:id="@+id/tnim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"

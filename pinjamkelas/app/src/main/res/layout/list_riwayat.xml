@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3858EF"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00B19D"
+            android:padding="5dp"
+            android:text="Menunggu Konfirmasi"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="NIM : 0110217059"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/ruangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ruangan : B1 - 101"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TanggalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tanggal Penggunaan : 12-12-2019"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/jadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jadwal Kelas : 13.00 - 14.00"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tanggapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FF9800"
+            android:text="Tanggapan BAAK : Terima Kasih"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

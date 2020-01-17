@@ -11,9 +11,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homepage);
 
-        final Button btnLogin = findViewById(R.id.tbl_login);
+        Intent i = new Intent(
+                MainActivity.this,
+                HomepageActivity.class);
+        startActivity(i);
+
+        /*final Button btnLogin = findViewById(R.id.tbl_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+         */
     }
 }

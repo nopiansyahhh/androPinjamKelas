@@ -13,17 +13,16 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="248dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="120dp"
                 android:fontFamily="sans-serif"
                 android:text="Kelas Keles"
                 android:textColor="#FFFFFF"
@@ -31,10 +30,10 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pengajuan Pinjam Kelas"
+                android:text="Riwayat Peminjaman"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
@@ -42,7 +41,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="25sp"
             android:layout_marginTop="35sp"
             android:orientation="vertical">
@@ -58,42 +57,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="#3858EF"
-        android:baselineAligned="false"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#062EF0"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="Pilih Ruang Kelas"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerLayout"
+            android:id="@+id/riwayatView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#062EF0" />
-
+            android:layout_margin="25dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,23 +75,23 @@
 
         <ImageView
             android:id="@+id/menuHome"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/red_repicthousebase" />
 
         <ImageView
             android:id="@+id/menuPeminjaman"
-            android:layout_width="48dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/pinjam_kelas" />
 
         <ImageView
             android:id="@+id/menuRiwayat"
-            android:layout_width="48dp"
-            android:layout_height="45dp"
+            android:layout_width="64dp"
+            android:layout_height="55dp"
             android:layout_marginTop="6dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/raphael_clock" />

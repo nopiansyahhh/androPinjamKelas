@@ -30,14 +30,6 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pengajuan Pinjam Kelas"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -68,31 +60,122 @@
         android:baselineAligned="false"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#062EF0"
-            android:orientation="vertical">
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Form Pinjam Kelas"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="Pilih Ruang Kelas"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Ruang Kelas yang Dipilih:"
+            android:textColor="#FFFFFF" />
 
-        </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerLayout"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#062EF0" />
+            android:background="#3858EF"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/ruangan_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ruangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ruangan : B1 - 101"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/hari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="hari : senin"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/jadwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jadwal Kelas : 13.00 - 14.00"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tnim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Masukkan NIM"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/mahasiswa_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/TanggalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Masukkan Tanggal (yyyy-mm-dd) :"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tanggapan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Masukkan Alasan Pinjam :"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/ket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_Insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#062EF0"
+                android:text="Ajukan"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

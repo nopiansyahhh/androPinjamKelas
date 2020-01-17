@@ -10,10 +10,10 @@ public class HomepageActivity extends AppCompatActivity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homepage);
+        setContentView(R.layout.activity_homepage);
 
 
-        final ImageView menuGrafik = findViewById(R.id.imgGrafik);
+        /*final ImageView menuGrafik = findViewById(R.id.imgGrafik);
         //inner class
         menuGrafik.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +25,7 @@ public class HomepageActivity extends AppCompatActivity{
                 startActivity(i);
             }
         });
+         */
 
         final ImageView menuPeminjaman = findViewById(R.id.imgPeminjaman);
 
@@ -39,6 +40,7 @@ public class HomepageActivity extends AppCompatActivity{
             }
         });
 
+        /*
         final ImageView menuSignout = findViewById(R.id.imgSignout);
 
         menuSignout.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +53,7 @@ public class HomepageActivity extends AppCompatActivity{
                 startActivity(i);
             }
         });
+         */
 
         final ImageView menuRiwayat = findViewById(R.id.imgRiwayat);
         menuRiwayat.setOnClickListener(new View.OnClickListener() {
